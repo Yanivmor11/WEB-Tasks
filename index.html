@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yaniv's Jungle</title> <!-- Page title -->
+  <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+  <h1>ברוכים הבאים לג'ונגל של יניב!</h1> <!-- Welcome message in Hebrew -->
+
+  <div class="animal-container">
+    <!-- Each animal has a data-key (for keyboard control) and data-sound (for audio playback) -->
+    <div class="animal" data-key="a" data-sound="sounds/lion.mp3">
+      <div class="animal-image-wrapper">
+        <img src="images/lion.png" alt="Lion">
+      </div>
+    </div>
+
+    <div class="animal" data-key="s" data-sound="sounds/elephant.mp3">
+      <div class="animal-image-wrapper">
+        <img src="images/elephant.png" alt="Elephant">
+      </div>
+    </div>
+
+    <div class="animal" data-key="d" data-sound="sounds/monkey.mp3">
+      <div class="animal-image-wrapper">
+        <img src="images/monkey.png" alt="Monkey">
+      </div>
+    </div>
+
+    <div class="animal" data-key="f" data-sound="sounds/snake.mp3">
+      <div class="animal-image-wrapper">
+        <img src="images/snake.png" alt="Snake">
+      </div>
+    </div>
+
+    <div class="animal" data-key="g" data-sound="sounds/frog.mp3">
+      <div class="animal-image-wrapper">
+        <img src="images/frog.png" alt="Frog">
+      </div>
+    </div>
+
+    <div class="animal" data-key="h" data-sound="sounds/bird.mp3">
+      <div class="animal-image-wrapper">
+        <img src="images/bird.png" alt="Bird">
+      </div>
+    </div>
+
+    <div class="animal" data-key="j" data-sound="sounds/rooster.mp3">
+      <div class="animal-image-wrapper">
+        <img src="images/rooster.png" alt="Rooster">
+      </div>
+    </div>
+
+    <div class="animal" data-key="k" data-sound="sounds/wolf.mp3">
+      <div class="animal-image-wrapper">
+        <img src="images/wolf.png" alt="Wolf">
+      </div>
+    </div>
+
+    <div class="animal" data-key="l" data-sound="sounds/hourse.mp3">
+      <div class="animal-image-wrapper">
+        <img src="images/hourse.png" alt="Hourse"> <!-- Typo: should be "Horse" -->
+      </div>
+    </div>
+  </div>
+
+  <audio id="background" src="sounds/background.mp3" autoplay loop></audio> <!-- Background music on page load -->
+  <script src="script.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>

@@ -1,0 +1,83 @@
+/* Basic global styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #e6ffe6;
+  text-align: center;
+  direction: rtl;
+}
+
+h1 {
+  background-color: #008000;
+  color: white;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Container for all animal boxes */
+.animal-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+/* Animal card styling */
+.animal {
+  border: 3px solid #4CAF50;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  width: 200px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+/* Zoom effect on hover */
+.animal:hover {
+  transform: scale(1.1);
+}
+
+/* Image container */
+.animal-image-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+
+/* Animal image styling */
+.animal img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .animal {
+    width: 140px;
+    height: 160px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .animal-image-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+  }
+}
